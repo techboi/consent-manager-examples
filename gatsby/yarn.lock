@@ -1615,20 +1615,20 @@
   dependencies:
     defer-to-connect "^2.0.0"
 
-"@techboi/privacy-manager@^0.1.1":
-  version "0.1.1"
-  resolved "http://localhost:4873/@techboi%2fprivacy-manager/-/privacy-manager-0.1.1.tgz#b556ee30f0178cb409103949bf4405c65838f976"
-  integrity sha512-+LqBVwBTfMsbhgQl83qPjDrKgDMLtltixT/r+s5fLNie297uHkwKlwCA0AlTXCuOGmBGnioYbCzR8m7z51GoMA==
+"@techboi/privacy-manager@^0.1.6":
+  version "0.1.6"
+  resolved "http://localhost:4873/@techboi%2fprivacy-manager/-/privacy-manager-0.1.6.tgz#85e10f46da3d9aa9fedb03209d3a84a12bf1f14d"
+  integrity sha512-sB5LDDB3vdmnqHSlfw6gQY8nYK4ksQUMH8YTGGnpkHD/siRkVE3d2LdpzOWbzlFHSW9h+7NS5jjb3xWJYrIyug==
   dependencies:
-    "@techboi/utils" "0.1.1"
+    "@techboi/utils" "0.1.6"
     "@types/history" "^4.7.8"
     react-use "^15.3.4"
     tslib "^2.0.0"
 
-"@techboi/utils@0.1.1":
-  version "0.1.1"
-  resolved "http://localhost:4873/@techboi%2futils/-/utils-0.1.1.tgz#afc9150b92797402692121cff2cedefabf6294ff"
-  integrity sha512-dOn/XD/TvUYIVdnkkkTOMDFLk3AdF4MqE57+zHX1q4sCbTUqwnT0JuWe6tvbrZYjYBIYO7VSpL8ztFYriyemAQ==
+"@techboi/utils@0.1.6":
+  version "0.1.6"
+  resolved "http://localhost:4873/@techboi%2futils/-/utils-0.1.6.tgz#c68c5e90633a17e6678c69bbc0f7545776adf992"
+  integrity sha512-S/Hru7ZIrRzSt6xcN8IdtYgLhXHlW+9pRKaYP3fgx91+NvqLNlhjOYJmwZhpLzX9Br6owvEniznPSFFbCBe5cA==
   dependencies:
     tslib "^2.0.0"
 
@@ -11189,6 +11189,11 @@ react-hot-loader@^4.12.21:
     react-lifecycles-compat "^3.0.4"
     shallowequal "^1.1.0"
     source-map "^0.7.3"
+
+react-icons@^4.1.0:
+  version "4.1.0"
+  resolved "https://registry.yarnpkg.com/react-icons/-/react-icons-4.1.0.tgz#9ca9bcbf2e3aee8e86e378bb9d465842947bbfc3"
+  integrity sha512-FCXBg1JbbR0vWALXIxmFAfozHdVIJmmwCD81Jk0EKOt7Ax4AdBNcaRkWhR0NaKy9ugJgoY3fFvo0PHpte55pXg==
 
 react-is@^16.12.0, react-is@^16.7.0, react-is@^16.8.1:
   version "16.13.1"

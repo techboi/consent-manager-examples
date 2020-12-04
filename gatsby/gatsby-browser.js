@@ -1,5 +1,5 @@
 import React from 'react'
-import { PrivacyManagerWrapper } from './src/components/privacy-manager-wrapper'
+import { PrivacyManagerWrapper } from './src/components/privacy-manager/wrapper'
 
 import './src/styles/global.css';
 

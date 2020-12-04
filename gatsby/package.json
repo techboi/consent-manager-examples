@@ -5,7 +5,7 @@
   "version": "0.1.0",
   "author": "Kyle Mathews <mathews.kyle@gmail.com>",
   "dependencies": {
-    "@techboi/privacy-manager": "^0.1.1",
+    "@techboi/privacy-manager": "^0.1.6",
     "autoprefixer": "^10.0.4",
     "final-form": "^4.20.1",
     "gatsby": "^2.26.1",
@@ -23,6 +23,7 @@
     "react-dom": "16",
     "react-final-form": "^6.5.2",
     "react-helmet": "^6.1.0",
+    "react-icons": "^4.1.0",
     "tailwindcss": "^2.0.1"
   },
   "devDependencies": {
