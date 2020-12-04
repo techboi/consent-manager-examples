@@ -1,8 +1,7 @@
 import React from 'react'
-import {
-  PrivacyManager,
-  PrivacyManagerForm
-} from '@techboi/privacy-manager'
+import { PrivacyManager } from '@techboi/privacy-manager'
+
+import { PrivacyManagerForm } from './privacy-manager-decisions-form'
 
 const privacyManagerConfig = {
   integrations: [

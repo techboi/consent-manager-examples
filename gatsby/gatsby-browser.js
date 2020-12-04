@@ -1,7 +1,9 @@
-const React = require('react')
-const { PrivacyManagerWrapper } = require('./src/components/privacy-manager-wrapper')
+import React from 'react'
+import { PrivacyManagerWrapper } from './src/components/privacy-manager-wrapper'
 
-exports.wrapRootElement = ({ element }) => {
+import './src/styles/global.css';
+
+export const wrapRootElement = ({ element }) => {
   return (
     <PrivacyManagerWrapper>{element}</PrivacyManagerWrapper>
   )
