@@ -10,9 +10,15 @@ import {
 
 const privacyManagerConfig: PrivacyManagerConfig = {
   integrations: [
-    { id: 'video-platform' },
+    {
+      id: 'video-platform',
+      title: 'Video Inc.',
+      description: 'Video Inc. is a popular service to share clips of cats.'
+    },
     {
       id: 'integration-with-wrapper',
+      title: 'Red Box Ltd.',
+      description: 'Adds red borders around your content, demonstrates use of components that do e.g. click tracking',
       wrapperComponent: ({ children }) => (
         <div style={{ border: '3px solid red' }}>{children}</div>
       ),
@@ -20,30 +26,17 @@ const privacyManagerConfig: PrivacyManagerConfig = {
   ],
 };
 
-const FallbackComponent: React.FC = () => (
-  <div
-    style={{
-      width: '16vw',
-      height: '9vw',
-      backgroundColor: 'black',
-      color: 'white',
-    }}
-  >
-    Your privacy decisions prevent you from seeing this content
-  </div>
-);
-
 const VideoPlatform: React.FC<{ id: string }> = ({ id }) => {
   return (
     <div
       style={{
-        width: '16vw',
-        height: '9vw',
         backgroundColor: 'darkblue',
         color: 'white',
+        border: '4px solid black',
+        padding:'2em'
       }}
     >
-      video component with id <pre>{id}</pre>
+      Video component with id <pre>{id}</pre>
     </div>
   );
 };
@@ -58,12 +51,16 @@ const App = () => {
       <PrivacyManager
         config={privacyManagerConfig}
         store={storage}
-        fallbackComponent={FallbackComponent}
       >
-        <PrivacyShield id="video-platform">
-          <VideoPlatform id="rick-roll" />
-        </PrivacyShield>
-        <PrivacyManagerForm />
+        <main style={{margin:'4em auto', maxWidth: '420px'}}>
+          <h1>Your content:</h1>
+          <PrivacyShield id="video-platform">
+            <VideoPlatform id="rick-roll" />
+          </PrivacyShield>
+        </main>
+        <aside style={{backgroundColor:'#eee', padding: '1em'}}>
+          <PrivacyManagerForm />
+        </aside>
       </PrivacyManager>
     </div>
   );
