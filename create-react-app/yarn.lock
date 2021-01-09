@@ -1816,9 +1816,9 @@
     "@svgr/plugin-svgo" "^5.4.0"
     loader-utils "^2.0.0"
 
-"@techboi/privacy-manager@^0.1.1":
+"@techboi/consent-manager@^0.1.1":
   version "0.1.1"
-  resolved "http://localhost:4873/@techboi%2fprivacy-manager/-/privacy-manager-0.1.1.tgz#b556ee30f0178cb409103949bf4405c65838f976"
+  resolved "http://localhost:4873/@techboi%2fconsent-manager/-/consent-manager-0.1.1.tgz#b556ee30f0178cb409103949bf4405c65838f976"
   integrity sha512-+LqBVwBTfMsbhgQl83qPjDrKgDMLtltixT/r+s5fLNie297uHkwKlwCA0AlTXCuOGmBGnioYbCzR8m7z51GoMA==
   dependencies:
     "@techboi/utils" "0.1.1"

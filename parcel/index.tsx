@@ -2,13 +2,13 @@ import * as React from 'react';
 import * as ReactDOM from 'react-dom';
 
 import {
-  PrivacyManager,
-  PrivacyManagerConfig,
-  PrivacyManagerForm,
+  ConsentManager,
+  ConsentManagerConfig,
+  ConsentManagerForm,
   PrivacyShield,
-} from '@techboi/privacy-manager';
+} from '@techboi/consent-manager';
 
-const privacyManagerConfig: PrivacyManagerConfig = {
+const consentManagerConfig: ConsentManagerConfig = {
   integrations: [
     {
       id: 'video-platform',
@@ -48,8 +48,8 @@ const App = () => {
 
   return (
     <div>
-      <PrivacyManager
-        config={privacyManagerConfig}
+      <ConsentManager
+        config={consentManagerConfig}
         store={storage}
       >
         <main style={{margin:'4em auto', maxWidth: '420px'}}>
@@ -59,9 +59,9 @@ const App = () => {
           </PrivacyShield>
         </main>
         <aside style={{backgroundColor:'#eee', padding: '1em'}}>
-          <PrivacyManagerForm />
+          <ConsentManagerForm />
         </aside>
-      </PrivacyManager>
+      </ConsentManager>
     </div>
   );
 };

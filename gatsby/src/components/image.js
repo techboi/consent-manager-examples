@@ -1,7 +1,7 @@
 import React from "react"
 import { useStaticQuery, graphql } from "gatsby"
 import Img from "gatsby-image"
-import { PrivacyShield } from "@techboi/privacy-manager"
+import { PrivacyShield } from "@techboi/consent-manager"
 
 /*
  * This component is built using `gatsby-image` to automatically serve optimized

@@ -1,4 +1,4 @@
-# Privacy Manager Examples
+# Consent Manager Examples
 
 ## Using the local registry
 
@@ -14,13 +14,13 @@ docker-compose down --volumes
 
 **Generate a new user default user httpasswd**
 ```sh
-htpasswd -c conf/httpasswd privacy-manager-bot
+htpasswd -c conf/httpasswd consent-manager-bot
 # You'll be prompted to set a password
 ```
 
 **Publish lerna packages to local registry**
 
-Run this in `privacy-manager` repo.
+Run this in `consent-manager` repo.
 
 ```sh
 npx lerna publish --registry http://localhost:4873 --yes --force-publish='*' --no-git-tag-version --no-commit-hooks --no-push --exact --dist-tag=latest
@@ -31,5 +31,5 @@ npx lerna publish --registry http://localhost:4873 --yes --force-publish='*' --n
 First install all except local.
 
 ```sh
-yarn add @techboi/privacy-manager --registry http://localhost:4873
+yarn add @techboi/consent-manager --registry http://localhost:4873
 ```

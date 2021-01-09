@@ -1,11 +1,11 @@
 import React, { useCallback, useContext } from "react"
 import { Field, Form } from "react-final-form"
 
-import PrivacyManagerUIContext from "./ui-context"
+import ConsentManagerUIContext from "./ui-context"
 import { Switch } from "./switch"
 
 export const DecisionsForm = ({ integrations, initialValues, onSubmit }) => {
-  const { isOpen, setIsOpen } = useContext(PrivacyManagerUIContext)
+  const { isOpen, setIsOpen } = useContext(ConsentManagerUIContext)
 
   const handleSubmitCb = useCallback(
     ({ enabled }) => {
@@ -23,7 +23,7 @@ export const DecisionsForm = ({ integrations, initialValues, onSubmit }) => {
         <form
           onSubmit={handleSubmit}
           className={`fixed bottom-0 left-0 right-0 bg-gray-100 p-4${
-            !isOpen ? " hidden" : ''
+            !isOpen ? " hidden" : ""
           }`}
         >
           <h1>We care about your privacy!</h1>

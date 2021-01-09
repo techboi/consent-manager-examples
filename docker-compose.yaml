@@ -2,7 +2,7 @@ version: '2.1'
 services:
   verdaccio:
     image: verdaccio/verdaccio:4
-    container_name: privacy-manager-examples-local-package-registry
+    container_name: consent-manager-examples-local-package-registry
     ports:
       - '4873:4873'
     volumes:

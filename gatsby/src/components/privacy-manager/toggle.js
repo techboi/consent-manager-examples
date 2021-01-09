@@ -1,15 +1,15 @@
 import React, { useContext, useCallback } from "react"
 
-import { HiCog } from 'react-icons/hi'
+import { HiCog } from "react-icons/hi"
 
-import { useIntegration } from "@techboi/privacy-manager"
+import { useIntegration } from "@techboi/consent-manager"
 
-import PrivacyManagerUIContext from "./ui-context"
+import ConsentManagerUIContext from "./ui-context"
 
-const PrivacyManagerToggle = () => {
-  const { isOpen, setIsOpen } = useContext(PrivacyManagerUIContext)
+const ConsentManagerToggle = () => {
+  const { isOpen, setIsOpen } = useContext(ConsentManagerUIContext)
 
-  const openPrivacyManager = useCallback(() => {
+  const openConsentManager = useCallback(() => {
     setIsOpen(true)
   }, [setIsOpen])
 
@@ -19,12 +19,12 @@ const PrivacyManagerToggle = () => {
 
   return (
     <button
-      onClick={openPrivacyManager}
+      onClick={openConsentManager}
       className="bg-transparent border-none fixed bottom-0 right-0 p-4"
     >
-      <HiCog/>
+      <HiCog />
     </button>
   )
 }
 
-export default PrivacyManagerToggle
+export default ConsentManagerToggle

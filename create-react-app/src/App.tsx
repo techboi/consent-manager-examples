@@ -1,7 +1,7 @@
 import React from 'react';
 import logo from './logo.svg';
 import './App.css';
-import { PrivacyManager, PrivacyManagerConfig, PrivacyManagerForm, PrivacyShield } from '@techboi/privacy-manager';
+import { ConsentManager, ConsentManagerConfig, ConsentManagerForm, PrivacyShield } from '@techboi/consent-manager';
 
 function App() {
   return (
@@ -26,7 +26,7 @@ function App() {
   );
 }
 
-const privacyManagerConfig: PrivacyManagerConfig = {
+const consentManagerConfig: ConsentManagerConfig = {
   integrations: [
     { id: 'images' },
     {
@@ -39,21 +39,21 @@ const privacyManagerConfig: PrivacyManagerConfig = {
 };
 
 
-function PrivacyManagerWrapper() {
+function ConsentManagerWrapper() {
   const storage = React.useState({
     decisions: {},
   });
 
   return (
-    <PrivacyManager
-      config={privacyManagerConfig}
+    <ConsentManager
+      config={consentManagerConfig}
       store={storage}
     >
-      <PrivacyManagerForm />
+      <ConsentManagerForm />
       <App />
-    </PrivacyManager>
+    </ConsentManager>
   )
 }
 
 
-export default PrivacyManagerWrapper;
+export default ConsentManagerWrapper;
