@@ -1,16 +1,16 @@
 import React, { useContext, useCallback } from "react"
 
-import { useIntegration } from "@techboi/privacy-manager"
-import { HiCog } from 'react-icons/hi'
+import { useIntegration } from "@techboi/consent-manager"
+import { HiCog } from "react-icons/hi"
 
-import PrivacyManagerUIContext from "./ui-context"
+import ConsentManagerUIContext from "./ui-context"
 
 export const FallbackComponent = ({ integrationId, fallbackUrl }) => {
   const integration = useIntegration(integrationId)
 
-  const { setIsOpen } = useContext(PrivacyManagerUIContext)
+  const { setIsOpen } = useContext(ConsentManagerUIContext)
 
-  const openPrivacyManager = useCallback(() => {
+  const openConsentManager = useCallback(() => {
     setIsOpen(true)
   }, [setIsOpen])
 
@@ -42,7 +42,9 @@ export const FallbackComponent = ({ integrationId, fallbackUrl }) => {
         </p>
       )}
       <p>
-        <button onClick={openPrivacyManager}><HiCog style={{display: 'inline'}}/> Change privacy settings</button>
+        <button onClick={openConsentManager}>
+          <HiCog style={{ display: "inline" }} /> Change privacy settings
+        </button>
       </p>
       {fallbackUrl && (
         <p>

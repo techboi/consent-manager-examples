@@ -923,20 +923,20 @@
     "@parcel/utils" "^1.11.0"
     physical-cpu-count "^2.0.0"
 
-"@techboi/privacy-manager@^0.1.5":
-  version "0.1.5"
-  resolved "http://localhost:4873/@techboi%2fprivacy-manager/-/privacy-manager-0.1.5.tgz#612612bbfab042bf8eca1b0a71dd21408332d3e6"
-  integrity sha512-joeV7s+5E0xrrbHgMyHPlf/tnocLB9sGap6p9AgeKhvp+OH1K/zVk5uH88IYqvkDiOG/AmIAduFgm8FvzYswRA==
+"@techboi/consent-manager@^0.1.7":
+  version "0.1.7"
+  resolved "http://localhost:4873/@techboi%2fconsent-manager/-/consent-manager-0.1.7.tgz#538598919f8692bffd34fe07351bb91662938d4e"
+  integrity sha512-WPAsL020lbo+87Zzm+KumgeM5PWkuMqdB6hY4BZjLeNMpEQlCZF+KIg5+zgI/VmsVVxzibhsd1sCtC2NbkNt2g==
   dependencies:
-    "@techboi/utils" "0.1.5"
+    "@techboi/utils" "0.1.7"
     "@types/history" "^4.7.8"
     react-use "^15.3.4"
     tslib "^2.0.0"
 
-"@techboi/utils@0.1.5":
-  version "0.1.5"
-  resolved "http://localhost:4873/@techboi%2futils/-/utils-0.1.5.tgz#1b233c1373b5c98f082e882fe8362e9f28c1ea9c"
-  integrity sha512-UbhAoVdnpN9wO34fF2H2SVgfaGbg+6afEGuuul5M8I5CLagbl2G+7OVSh28DJLHQAUlIJh5pI1QgSLHCKgoJXw==
+"@techboi/utils@0.1.7":
+  version "0.1.7"
+  resolved "http://localhost:4873/@techboi%2futils/-/utils-0.1.7.tgz#f1db95be27ea706677ff28d450716a5ae98bb086"
+  integrity sha512-/+IoGzM0UFGVwlzJsLNLxA4MVq+Z5/a2/ACBZIaR8Npt6OlYqghcmEoZyS+vWR6e6aEPw9sCiK4R0t30hPWk1Q==
   dependencies:
     tslib "^2.0.0"
 

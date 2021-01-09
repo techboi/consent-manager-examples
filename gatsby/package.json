@@ -5,7 +5,7 @@
   "version": "0.1.0",
   "author": "Kyle Mathews <mathews.kyle@gmail.com>",
   "dependencies": {
-    "@techboi/privacy-manager": "^0.1.6",
+    "@techboi/consent-manager": "^0.1.6",
     "autoprefixer": "^10.0.4",
     "final-form": "^4.20.1",
     "gatsby": "^2.26.1",

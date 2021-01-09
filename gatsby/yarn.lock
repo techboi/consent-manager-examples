@@ -1615,9 +1615,9 @@
   dependencies:
     defer-to-connect "^2.0.0"
 
-"@techboi/privacy-manager@^0.1.6":
+"@techboi/consent-manager@^0.1.6":
   version "0.1.6"
-  resolved "http://localhost:4873/@techboi%2fprivacy-manager/-/privacy-manager-0.1.6.tgz#85e10f46da3d9aa9fedb03209d3a84a12bf1f14d"
+  resolved "http://localhost:4873/@techboi%2fconsent-manager/-/consent-manager-0.1.6.tgz#85e10f46da3d9aa9fedb03209d3a84a12bf1f14d"
   integrity sha512-sB5LDDB3vdmnqHSlfw6gQY8nYK4ksQUMH8YTGGnpkHD/siRkVE3d2LdpzOWbzlFHSW9h+7NS5jjb3xWJYrIyug==
   dependencies:
     "@techboi/utils" "0.1.6"
