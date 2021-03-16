@@ -831,6 +831,13 @@
   dependencies:
     regenerator-runtime "^0.13.4"
 
+"@babel/runtime@^7.7.6":
+  version "7.13.10"
+  resolved "http://localhost:4873/@babel%2fruntime/-/runtime-7.13.10.tgz#47d42a57b6095f4468da440388fdbad8bebf0d7d"
+  integrity sha512-4QPkjJq6Ns3V/RgpEahRk+AGfL0eO6RHHtTWoNNr5mO49G6B5+X6d6THgWEAvTrznU5xYpbAlVKRYcsCgh/Akw==
+  dependencies:
+    regenerator-runtime "^0.13.4"
+
 "@babel/template@^7.10.4", "@babel/template@^7.12.7", "@babel/template@^7.4.4":
   version "7.12.7"
   resolved "https://registry.yarnpkg.com/@babel/template/-/template-7.12.7.tgz#c817233696018e39fbb6c491d2fb684e05ed43bc"
@@ -923,22 +930,16 @@
     "@parcel/utils" "^1.11.0"
     physical-cpu-count "^2.0.0"
 
-"@techboi/consent-manager@^0.1.7":
-  version "0.1.7"
-  resolved "http://localhost:4873/@techboi%2fconsent-manager/-/consent-manager-0.1.7.tgz#538598919f8692bffd34fe07351bb91662938d4e"
-  integrity sha512-WPAsL020lbo+87Zzm+KumgeM5PWkuMqdB6hY4BZjLeNMpEQlCZF+KIg5+zgI/VmsVVxzibhsd1sCtC2NbkNt2g==
+"@techboi/consent-manager@^0.2.0":
+  version "0.2.0"
+  resolved "http://localhost:4873/@techboi%2fconsent-manager/-/consent-manager-0.2.0.tgz#791a989f1dc1180bb9abcbb20cb0ca2906af3046"
+  integrity sha512-1J1eOhEOzXn8rvnJzwFMDqKD1Jtt9SV5M8CBxY9FRzB+NN/dDl1qs1Pdsiic6ctFvsm8xex0DjXFSa34qtNWlA==
   dependencies:
-    "@techboi/utils" "0.1.7"
     "@types/history" "^4.7.8"
+    history "^5.0.0"
     react-use "^15.3.4"
     tslib "^2.0.0"
-
-"@techboi/utils@0.1.7":
-  version "0.1.7"
-  resolved "http://localhost:4873/@techboi%2futils/-/utils-0.1.7.tgz#f1db95be27ea706677ff28d450716a5ae98bb086"
-  integrity sha512-/+IoGzM0UFGVwlzJsLNLxA4MVq+Z5/a2/ACBZIaR8Npt6OlYqghcmEoZyS+vWR6e6aEPw9sCiK4R0t30hPWk1Q==
-  dependencies:
-    tslib "^2.0.0"
+    wcag-contrast "^3.0.0"
 
 "@types/history@^4.7.8":
   version "4.7.8"
@@ -2279,6 +2280,11 @@ escodegen@~1.9.0:
   optionalDependencies:
     source-map "~0.6.1"
 
+esm@^3.0.84:
+  version "3.2.25"
+  resolved "http://localhost:4873/esm/-/esm-3.2.25.tgz#342c18c29d56157688ba5ce31f8431fbb795cc10"
+  integrity sha512-U1suiZ2oDVWv4zPO56S0NcR5QriEahGtdN2OR6FiOG4WJvcjBVFB0qI4+eKoWFH483PKGuLuu6V8Z4T5g63UVA==
+
 esprima@^3.1.3:
   version "3.1.3"
   resolved "https://registry.yarnpkg.com/esprima/-/esprima-3.1.3.tgz#fdca51cee6133895e3c88d535ce49dbff62a4633"
@@ -2668,6 +2674,13 @@ hex-color-regex@^1.1.0:
   version "1.1.0"
   resolved "https://registry.yarnpkg.com/hex-color-regex/-/hex-color-regex-1.1.0.tgz#4c06fccb4602fe2602b3c93df82d7e7dbf1a8a8e"
   integrity sha512-l9sfDFsuqtOqKDsQdqrMRk0U85RZc0RtOR9yPI7mRVOa4FsR/BVnZ0shmQRM96Ji99kYZP/7hn1cedc1+ApsTQ==
+
+history@^5.0.0:
+  version "5.0.0"
+  resolved "http://localhost:4873/history/-/history-5.0.0.tgz#0cabbb6c4bbf835addb874f8259f6d25101efd08"
+  integrity sha512-3NyRMKIiFSJmIPdq7FxkNMJkQ7ZEtVblOQ38VtKaA0zZMW1Eo6Q6W8oDKEflr1kNNTItSnk4JMCO1deeSgbLLg==
+  dependencies:
+    "@babel/runtime" "^7.7.6"
 
 hmac-drbg@^1.0.0:
   version "1.0.1"
@@ -4478,6 +4491,13 @@ relateurl@^0.2.7:
   resolved "https://registry.yarnpkg.com/relateurl/-/relateurl-0.2.7.tgz#54dbf377e51440aca90a4cd274600d3ff2d888a9"
   integrity sha1-VNvzd+UUQKypCkzSdGANP/LYiKk=
 
+relative-luminance@^2.0.0:
+  version "2.0.1"
+  resolved "http://localhost:4873/relative-luminance/-/relative-luminance-2.0.1.tgz#2babddf3a5a59673227d6f02e0f68e13989e3d13"
+  integrity sha512-wFuITNthJilFPwkK7gNJcULxXBcfFZvZORsvdvxeOdO44wCeZnuQkf3nFFzOR/dpJNxYsdRZJLsepWbyKhnMww==
+  dependencies:
+    esm "^3.0.84"
+
 remove-trailing-separator@^1.0.1:
   version "1.1.0"
   resolved "https://registry.yarnpkg.com/remove-trailing-separator/-/remove-trailing-separator-1.1.0.tgz#c24bce2a283adad5bc3f58e0d48249b92379d8ef"
@@ -5412,6 +5432,13 @@ w3c-xmlserializer@^1.1.2:
     domexception "^1.0.1"
     webidl-conversions "^4.0.2"
     xml-name-validator "^3.0.0"
+
+wcag-contrast@^3.0.0:
+  version "3.0.0"
+  resolved "http://localhost:4873/wcag-contrast/-/wcag-contrast-3.0.0.tgz#51c2df43f15162993006454b3362844205889efb"
+  integrity sha512-RWbpg/S7FOXDCwqC2oFhN/vh8dHzj0OS6dpyOSDHyQFSmqmR+lAUStV/ziTT1GzDqL9wol+nZQB4vCi5yEak+w==
+  dependencies:
+    relative-luminance "^2.0.0"
 
 wcwidth@^1.0.1:
   version "1.0.1"
