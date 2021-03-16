@@ -8,7 +8,7 @@
     "build": "parcel build index.html"
   },
   "dependencies": {
-    "@techboi/consent-manager": "^0.1.7",
+    "@techboi/consent-manager": "^0.2.0",
     "react": "17.0.1",
     "react-app-polyfill": "^1.0.0",
     "react-dom": "^17.0.1"
