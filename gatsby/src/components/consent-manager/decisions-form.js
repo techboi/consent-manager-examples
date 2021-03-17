@@ -12,7 +12,7 @@ export const DecisionsForm = ({ integrations, initialValues, onSubmit }) => {
       onSubmit({ enabled })
       setIsOpen(false)
     },
-    [onSubmit]
+    [onSubmit, setIsOpen]
   )
 
   return (

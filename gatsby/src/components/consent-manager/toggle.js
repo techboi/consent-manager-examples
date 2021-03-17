@@ -2,8 +2,6 @@ import React, { useContext, useCallback } from "react"
 
 import { HiCog } from "react-icons/hi"
 
-import { useIntegration } from "@techboi/consent-manager"
-
 import ConsentManagerUIContext from "./ui-context"
 
 const ConsentManagerToggle = () => {
