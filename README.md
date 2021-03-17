@@ -26,10 +26,19 @@ Run this in `consent-manager` repo.
 npx lerna publish --registry http://localhost:4873 --yes --force-publish='*' --no-git-tag-version --no-commit-hooks --no-push --exact --dist-tag=latest
 ```
 
+
 **Install local package**
 
 First install all except local.
 
 ```sh
 yarn add @techboi/consent-manager --registry http://localhost:4873
+```
+
+**Use local registry as default**
+
+Crate `.yarnrc`
+
+```sh
+registry "http://localhost:4873"
 ```
