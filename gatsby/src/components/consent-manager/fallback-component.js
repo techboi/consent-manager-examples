@@ -18,19 +18,12 @@ export const FallbackComponent = ({ integrationId, fallbackUrl }) => {
     throw new Error(`No integration found for "${integrationId}"`)
   }
 
-  const { title, privacyPolicyUrl, iconSrc, description } = integration
+  const { title, privacyPolicyUrl, Icon, description } = integration
 
   return (
     <section className="bg-gray-100 p-5 border-4 border-gray-700">
-      <h1 className="inline-flex">
-        {iconSrc && (
-          <img
-            src={iconSrc}
-            alt={title}
-            aria-hidden="true"
-            style={{ width: "1em", marginRight: "0.3em" }}
-          />
-        )}
+      <h1 className="flex items-center gap-4">
+        <Icon className="w-12" />
         {title}
       </h1>
       {description && <p>{description}</p>}

@@ -29,11 +29,14 @@ export const DecisionsForm = ({ integrations, initialValues, onSubmit }) => {
           <h1>We care about your privacy!</h1>
           <p>Please select the services you want to share data with</p>
           <div className="grid gap-x-4 gap-y-8 grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 mx-auto mt-6 max-w-6xl">
-            {integrations.map(({ id, title }) => (
+            {integrations.map(({ id, title, Icon }) => (
               <Field
                 key={id}
                 render={(props) => (
-                  <Switch {...props.input}>{title || id}</Switch>
+                  <Switch {...props.input}>
+                    <Icon className="inline-block w-6 mr-2 align-center mb-1" />
+                    {title || id}
+                  </Switch>
                 )}
                 type="checkbox"
                 name="enabled"
