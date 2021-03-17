@@ -1,12 +1,14 @@
 import React from "react"
-import { ConsentManager, ConsentManagerForm } from "@techboi/consent-manager"
 
-import { DecisionsForm } from "./decisions-form"
-import { FallbackComponent } from "./fallback-component"
-import ConsentManagerUIContext from "./ui-context"
-import ConsentManagerToggle from "./toggle"
-import { matomoIntegration } from "@techboi/consent-manager-integration-matomo"
-import { youTubeIntegration } from "@techboi/consent-manager-integration-youtube"
+import { ConsentManager, ConsentManagerForm } from "@consent-manager/core"
+
+import { matomoIntegration } from "@consent-manager/integration-matomo"
+import { youtubeIntegration } from "@consent-manager/integration-youtube"
+
+import { UnobtrusiveConsentControlUI } from "@consent-manager/interface-default"
+import "@consent-manager/interface-default/dist/default.min.css"
+
+import { FallbackComponent } from "./tailwind-fallback-component"
 
 const consentManagerConfig = {
   integrations: [
@@ -14,7 +16,7 @@ const consentManagerConfig = {
       matomoURL: process.env.GATSBY_MATOMO_URL,
       siteID: process.env.GATSBY_MATOMO_SITE_ID,
     }),
-    youTubeIntegration(),
+    youtubeIntegration(),
     {
       id: "images",
       title: "Gatsby Image",
@@ -43,21 +45,15 @@ export function ConsentManagerWrapper({ children }) {
   const storage = React.useState({
     decisions: {},
   })
-  const [isOpen, setIsOpen] = React.useState(
-    !storage.decisions || !!Object.keys(storage.decisions).length
-  )
 
   return (
-    <ConsentManagerUIContext.Provider value={{ isOpen, setIsOpen }}>
-      <ConsentManager
-        config={consentManagerConfig}
-        store={storage}
-        fallbackComponent={FallbackComponent}
-      >
-        {children}
-        <ConsentManagerForm formComponent={DecisionsForm} />
-        <ConsentManagerToggle />
-      </ConsentManager>
-    </ConsentManagerUIContext.Provider>
+    <ConsentManager
+      config={consentManagerConfig}
+      store={storage}
+      fallbackComponent={FallbackComponent}
+    >
+      {children}
+      <ConsentManagerForm formComponent={UnobtrusiveConsentControlUI} />
+    </ConsentManager>
   )
 }

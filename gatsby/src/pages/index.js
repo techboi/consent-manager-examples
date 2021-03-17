@@ -5,7 +5,7 @@ import Layout from "../components/layout"
 import Image from "../components/image"
 import SEO from "../components/seo"
 
-import { YouTubeVideo } from "@techboi/consent-manager-integration-youtube"
+import { YouTubeVideo } from "@consent-manager/integration-youtube"
 
 const IndexPage = () => (
   <Layout>
