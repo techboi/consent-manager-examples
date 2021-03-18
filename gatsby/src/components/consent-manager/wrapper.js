@@ -1,6 +1,7 @@
 import React from "react"
 
 import { ConsentManager, ConsentManagerForm } from "@consent-manager/core"
+import createPersistedState from "use-persisted-state"
 
 import { matomoIntegration } from "@consent-manager/integration-matomo"
 import { youtubeIntegration } from "@consent-manager/integration-youtube"
@@ -9,6 +10,10 @@ import { UnobtrusiveConsentControlUI } from "@consent-manager/interface-default"
 import "@consent-manager/interface-default/dist/default.min.css"
 
 import { FallbackComponent } from "./tailwind-fallback-component"
+
+const useConsentStateStore = createPersistedState(
+  "consent-manager-gatsby-example"
+)
 
 const consentManagerConfig = {
   integrations: [
@@ -42,9 +47,7 @@ const consentManagerConfig = {
 }
 
 export function ConsentManagerWrapper({ children }) {
-  const storage = React.useState({
-    decisions: {},
-  })
+  const storage = useConsentStateStore()
 
   return (
     <ConsentManager
