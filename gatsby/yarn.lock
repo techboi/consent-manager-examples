@@ -1030,6 +1030,45 @@
     lodash "^4.17.19"
     to-fast-properties "^2.0.0"
 
+"@consent-manager/core@^0.4.2":
+  version "0.4.2"
+  resolved "http://localhost:4873/@consent-manager%2fcore/-/core-0.4.2.tgz#9a8210ab3211770033b439254a9b8c343c85928d"
+  integrity sha512-k4qSTbQ37oEO5DIAK2csZMtVT7Gg/GQ9ZT//f+VYEvMj+ILAe8HQvk91LOy111LrzR0bXEOzEQMYQSLWFcyqYA==
+  dependencies:
+    "@types/history" "^4.7.8"
+    history "^5.0.0"
+    react-use "^15.3.4"
+    tslib "^2.0.0"
+    wcag-contrast "^3.0.0"
+
+"@consent-manager/integration-matomo@^0.4.2":
+  version "0.4.2"
+  resolved "http://localhost:4873/@consent-manager%2fintegration-matomo/-/integration-matomo-0.4.2.tgz#34a6e2ff74671f42e97c7142b3f31ec28d4b3a32"
+  integrity sha512-pM6qzG+IEnsVpP1e1tHhCgxE/pSHX6gCbBi4f/djB2czgcHStmH8f3iY+zXN+feZKD5N7UjqWvbMvQxrLkx6fA==
+  dependencies:
+    "@consent-manager/core" "^0.4.2"
+    simple-icons "^4.14.0"
+
+"@consent-manager/integration-youtube@^0.4.2":
+  version "0.4.2"
+  resolved "http://localhost:4873/@consent-manager%2fintegration-youtube/-/integration-youtube-0.4.2.tgz#0d05d6b38a3feb6802e9fadf620927f4e95053cf"
+  integrity sha512-PCgXMFS35RMEjrrr+YT7oq/AUzJ4+2giCdsQ1blJdslDfg7JuNzRE39qBfiWeft7VMkcCJWZLQok57D+E+aBVw==
+  dependencies:
+    "@consent-manager/core" "^0.4.2"
+    react-youtube "^7.13.1"
+    simple-icons "^4.14.0"
+
+"@consent-manager/interface-default@^0.4.2":
+  version "0.4.2"
+  resolved "http://localhost:4873/@consent-manager%2finterface-default/-/interface-default-0.4.2.tgz#3618c75021fa770a69a54d24299c2d9bb6c72d0b"
+  integrity sha512-QGp+6Zo5MuE7gsg8XzocnTyK0CYcRiIZlky/9kqgh6SXV9Zbt0rll+QdPomZ2CRkWWmRGKqy4nX0lmI+zmqekA==
+  dependencies:
+    "@consent-manager/core" "^0.4.2"
+    clsx "^1.1.1"
+    react-anime "^4.0.4"
+    react-final-form "^6.5.2"
+    react-icons "^4.2.0"
+
 "@endemolshinegroup/cosmiconfig-typescript-loader@3.0.2":
   version "3.0.2"
   resolved "https://registry.yarnpkg.com/@endemolshinegroup/cosmiconfig-typescript-loader/-/cosmiconfig-typescript-loader-3.0.2.tgz#eea4635828dde372838b0909693ebd9aafeec22d"
@@ -1673,34 +1712,6 @@
   dependencies:
     defer-to-connect "^2.0.0"
 
-"@techboi/consent-manager-integration-matomo@^0.2.0":
-  version "0.2.0"
-  resolved "http://localhost:4873/@techboi%2fconsent-manager-integration-matomo/-/consent-manager-integration-matomo-0.2.0.tgz#e3c2a68bb45560c720c348abedb9faa99b7364f9"
-  integrity sha512-XYZ95K2NLCzZ4mKPNIhV37oyBGVhz4KQjCcuMGPVPmoYI8zr+FkiOJK6ZUjmS/orme8dMV0VD4AkbSHRTQMdBA==
-  dependencies:
-    "@techboi/consent-manager" "0.2.0"
-    simple-icons "^4.14.0"
-
-"@techboi/consent-manager-integration-youtube@^0.2.0":
-  version "0.2.0"
-  resolved "http://localhost:4873/@techboi%2fconsent-manager-integration-youtube/-/consent-manager-integration-youtube-0.2.0.tgz#0d8c87de83be7f9e8d4cca2d29163131449cb775"
-  integrity sha512-sOVdKE1soXWt9l2USqmdHOcNVBd9sp1h4p8Pmsinb354/KEy/H0Vei4gbJdWR5Q58U3CG0dHNNBaXuHrByyapw==
-  dependencies:
-    "@techboi/consent-manager" "0.2.0"
-    react-youtube "^7.13.1"
-    simple-icons "^4.14.0"
-
-"@techboi/consent-manager@0.2.0", "@techboi/consent-manager@^0.2.0":
-  version "0.2.0"
-  resolved "http://localhost:4873/@techboi%2fconsent-manager/-/consent-manager-0.2.0.tgz#791a989f1dc1180bb9abcbb20cb0ca2906af3046"
-  integrity sha512-1J1eOhEOzXn8rvnJzwFMDqKD1Jtt9SV5M8CBxY9FRzB+NN/dDl1qs1Pdsiic6ctFvsm8xex0DjXFSa34qtNWlA==
-  dependencies:
-    "@types/history" "^4.7.8"
-    history "^5.0.0"
-    react-use "^15.3.4"
-    tslib "^2.0.0"
-    wcag-contrast "^3.0.0"
-
 "@tokenizer/token@^0.1.0", "@tokenizer/token@^0.1.1":
   version "0.1.1"
   resolved "https://registry.yarnpkg.com/@tokenizer/token/-/token-0.1.1.tgz#f0d92c12f87079ddfd1b29f614758b9696bc29e3"
@@ -2072,6 +2083,11 @@
     "@typescript-eslint/types" "4.18.0"
     eslint-visitor-keys "^2.0.0"
 
+"@use-it/event-listener@^0.1.2":
+  version "0.1.6"
+  resolved "http://localhost:4873/@use-it%2fevent-listener/-/event-listener-0.1.6.tgz#5776274fec72f3f25af9ead1898e7f45bc435812"
+  integrity sha512-e6V7vbU8xpuqy4GZkTLExHffOFgxmGHo3kNWnlhzM/zcX2v+idbD/HaJ9sKdQMgTh+L7MIhdRDXGX3SdAViZzA==
+
 "@webassemblyjs/ast@1.11.0":
   version "1.11.0"
   resolved "http://localhost:4873/@webassemblyjs%2fast/-/ast-1.11.0.tgz#a5aa679efdc9e51707a4207139da57920555961f"
@@ -2292,6 +2308,11 @@ alphanum-sort@^1.0.0:
   version "1.0.2"
   resolved "https://registry.yarnpkg.com/alphanum-sort/-/alphanum-sort-1.0.2.tgz#97a1119649b211ad33691d9f9f486a8ec9fbe0a3"
   integrity sha1-l6ERlkmyEa0zaR2fn0hqjsn74KM=
+
+animejs@^3.2.x:
+  version "3.2.1"
+  resolved "http://localhost:4873/animejs/-/animejs-3.2.1.tgz#de9fe2e792f44a777a7fdf6ae160e26604b0cdda"
+  integrity sha512-sWno3ugFryK5nhiDm/2BKeFCpZv7vzerWUcUPyAZLDhMek3+S/p418ldZJbJXo5ZUOpfm2kP2XRO4NJcULMy9A==
 
 anser@^2.0.1:
   version "2.0.1"
@@ -3498,6 +3519,11 @@ clone-response@1.0.2, clone-response@^1.0.2:
   integrity sha1-0dyXOSAxTfZ/vrlCI7TuNQI56Ws=
   dependencies:
     mimic-response "^1.0.0"
+
+clsx@^1.1.1:
+  version "1.1.1"
+  resolved "http://localhost:4873/clsx/-/clsx-1.1.1.tgz#98b3134f9abbdf23b2663491ace13c5c03a73188"
+  integrity sha512-6/bPho624p3S2pMyvP5kKBPXnI3ufHLObBFCfgx+LkeR5lg2XYy2hqZqUf45ypD8COn2bhgGJSUE+l5dhNBieA==
 
 coa@^2.0.2:
   version "2.0.2"
@@ -10450,6 +10476,14 @@ rc@^1.2.7, rc@^1.2.8:
     minimist "^1.2.0"
     strip-json-comments "~2.0.1"
 
+react-anime@^4.0.3, react-anime@^4.0.4:
+  version "4.0.4"
+  resolved "http://localhost:4873/react-anime/-/react-anime-4.0.4.tgz#60f3d179e730c63a117e012b2799230ea7dc59ea"
+  integrity sha512-keyFmNCVEeKPT13TaHuw7p4OWsHaWI3/u+ivTcxUbmZalKnEQKhxuSTJTlYJLHbMCL2kWoLdLZXz/iaJ+CxGVA==
+  dependencies:
+    animejs "^3.2.x"
+    react-anime "^4.0.3"
+
 react-dev-utils@^11.0.3:
   version "11.0.4"
   resolved "http://localhost:4873/react-dev-utils/-/react-dev-utils-11.0.4.tgz#a7ccb60257a1ca2e0efe7a83e38e6700d17aa37a"
@@ -12789,6 +12823,13 @@ url@^0.11.0:
   dependencies:
     punycode "1.3.2"
     querystring "0.2.0"
+
+use-persisted-state@^0.3.3:
+  version "0.3.3"
+  resolved "http://localhost:4873/use-persisted-state/-/use-persisted-state-0.3.3.tgz#5e0f2236967cec7c34de33abc07ae6818e7c7451"
+  integrity sha512-pCNlvYC8+XjRxwnIut4teGC9f2p9aD88R8OGseQGZa2dvqG/h1vEGk1vRE1IZG0Vf161UDpn+NlW4+UGubQflQ==
+  dependencies:
+    "@use-it/event-listener" "^0.1.2"
 
 use@^3.1.0:
   version "3.1.1"

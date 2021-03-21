@@ -5,9 +5,10 @@
   "version": "0.1.0",
   "author": "Kyle Mathews <mathews.kyle@gmail.com>",
   "dependencies": {
-    "@techboi/consent-manager": "^0.2.0",
-    "@techboi/consent-manager-integration-matomo": "^0.2.0",
-    "@techboi/consent-manager-integration-youtube": "^0.2.0",
+    "@consent-manager/core": "^0.4.2",
+    "@consent-manager/integration-matomo": "^0.4.2",
+    "@consent-manager/integration-youtube": "^0.4.2",
+    "@consent-manager/interface-default": "^0.4.2",
     "autoprefixer": "^10.2.5",
     "final-form": "^4.20.2",
     "gatsby": "^3.1.0",
@@ -26,7 +27,8 @@
     "react-final-form": "^6.5.2",
     "react-helmet": "^6.1.0",
     "react-icons": "^4.2.0",
-    "tailwindcss": "^2.0.3"
+    "tailwindcss": "^2.0.3",
+    "use-persisted-state": "^0.3.3"
   },
   "devDependencies": {
     "prettier": "2.2.1"

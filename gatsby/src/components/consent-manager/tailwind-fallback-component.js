@@ -1,18 +1,15 @@
-import React, { useContext, useCallback } from "react"
+import React, { useCallback } from "react"
 
-import { useIntegration } from "@techboi/consent-manager"
+import { useIntegration, useDecision } from "@consent-manager/core"
 import { HiCog } from "react-icons/hi"
-
-import ConsentManagerUIContext from "./ui-context"
 
 export const FallbackComponent = ({ integrationId, fallbackUrl }) => {
   const integration = useIntegration(integrationId)
+  const [, setDecision] = useDecision(integrationId)
 
-  const { setIsOpen } = useContext(ConsentManagerUIContext)
-
-  const openConsentManager = useCallback(() => {
-    setIsOpen(true)
-  }, [setIsOpen])
+  const enableIntegration = useCallback(() => {
+    setDecision(true)
+  }, [setDecision])
 
   if (!integration) {
     throw new Error(`No integration found for "${integrationId}"`)
@@ -35,8 +32,8 @@ export const FallbackComponent = ({ integrationId, fallbackUrl }) => {
         </p>
       )}
       <p>
-        <button onClick={openConsentManager}>
-          <HiCog style={{ display: "inline" }} /> Change privacy settings
+        <button onClick={enableIntegration}>
+          <HiCog style={{ display: "inline" }} /> Enable {title}
         </button>
       </p>
       {fallbackUrl && (
