@@ -1016,10 +1016,10 @@
     lodash "^4.17.19"
     to-fast-properties "^2.0.0"
 
-"@consent-manager/core@0.1.0-alpha.0", "@consent-manager/core@^0.1.0-alpha.0":
-  version "0.1.0-alpha.0"
-  resolved "http://localhost:4873/@consent-manager%2fcore/-/core-0.1.0-alpha.0.tgz#07c63a9690dbe93d2db194864cf3e0675f64f6a0"
-  integrity sha512-+aeVx/ZVpl4e10k66UtBI3wSkBU568NNGdu9PBaED2lcLv4seXAsDGJkA/0Hshc1pZXou5+vIZplpLvWd1bQNQ==
+"@consent-manager/core@0.1.5-alpha.0", "@consent-manager/core@^0.1.5-alpha.0":
+  version "0.1.5-alpha.0"
+  resolved "http://localhost:4873/@consent-manager%2fcore/-/core-0.1.5-alpha.0.tgz#efcec42df283aaeb27627e33669177af8ca934ca"
+  integrity sha512-JBmgn1z/5RYcqYlwfhq1Z9A3arEyCXDRT7owxzMjY2bBrDG3macG74VUq41LfEF1nwW0qjw+zCGBqjpWt4vhWA==
   dependencies:
     "@types/history" "^4.7.8"
     history "^5.0.0"
@@ -1027,20 +1027,20 @@
     tslib "^2.0.0"
     wcag-contrast "^3.0.0"
 
-"@consent-manager/integration-matomo@^0.1.0-alpha.0":
-  version "0.1.0-alpha.0"
-  resolved "http://localhost:4873/@consent-manager%2fintegration-matomo/-/integration-matomo-0.1.0-alpha.0.tgz#8b45c2c72b8fe2c60c65108baaefb58c10d3919b"
-  integrity sha512-F8z7JqtxgQr3N2CTlF294yI9THNCacqKp/azvobuR1wPnI9Ysse5T924I9nKD1YpRD3sF6mEqbuwDHhp17wM6A==
+"@consent-manager/integration-matomo@^0.1.5-alpha.0":
+  version "0.1.5-alpha.0"
+  resolved "http://localhost:4873/@consent-manager%2fintegration-matomo/-/integration-matomo-0.1.5-alpha.0.tgz#8d40b4e4a17074d2f3cffbe0ef4edd13ccd90d7a"
+  integrity sha512-X3CBtm5d2/yutmj9Cacj2jUxn8aKN+KwH4S4GhEgPHrGGn2KaxQvJxbaahdH8iTN6pxBl0aYeHZgT3d76AMuhA==
   dependencies:
-    "@consent-manager/core" "0.1.0-alpha.0"
+    "@consent-manager/core" "0.1.5-alpha.0"
     simple-icons "^4.14.0"
 
-"@consent-manager/interface-default@^0.1.0-alpha.0":
-  version "0.1.0-alpha.0"
-  resolved "http://localhost:4873/@consent-manager%2finterface-default/-/interface-default-0.1.0-alpha.0.tgz#430391b03aadde27d2adc705a56c4badb30e3f84"
-  integrity sha512-TuFGXdnmkCnmZ5RACfB2YIUzPyCfIwtup3sF4tSxzxgOh/s0etFd9vKboK0en+PWw5le0fyzDKWnTm46YrhbjA==
+"@consent-manager/interface-default@^0.1.5-alpha.0":
+  version "0.1.5-alpha.0"
+  resolved "http://localhost:4873/@consent-manager%2finterface-default/-/interface-default-0.1.5-alpha.0.tgz#9531e85a3c0359bf978ac55422ef7dc91425786d"
+  integrity sha512-sNkeC4Kure3wo0CMCmF3+2tfuYE8F3EUp6IHxPkwmuOruGw2yze8rlpdULoxIxgaBvAJJsS3f9vBRuNA42/hiQ==
   dependencies:
-    "@consent-manager/core" "0.1.0-alpha.0"
+    "@consent-manager/core" "0.1.5-alpha.0"
     "@react-icons/all-files" "^4.1.0"
     activity-detector-ssr "^3.0.0"
     body-scroll-lock "^3.1.5"

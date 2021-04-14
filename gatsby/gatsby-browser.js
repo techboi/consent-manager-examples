@@ -34,7 +34,7 @@ i18n.on("missing", (event) => {
 export const wrapRootElement = ({ element }) => {
   return (
     <I18nProvider i18n={i18n}>
-      <ConsentManagerWrapper>{element}</ConsentManagerWrapper>
+      <ConsentManagerWrapper i18n={i18n}>{element}</ConsentManagerWrapper>
     </I18nProvider>
   )
 }

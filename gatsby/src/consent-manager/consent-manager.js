@@ -6,9 +6,8 @@
  */
 
 import React from "react"
-import { Trans } from "@lingui/react"
 
-import { ConsentManager, ConsentManagerForm } from "@consent-manager/core"
+import { ConsentManager } from "@consent-manager/core"
 import createPersistedState from "use-persisted-state"
 
 import {
@@ -17,7 +16,7 @@ import {
 } from "@consent-manager/integration-matomo"
 
 import {
-  InterfaceDefault,
+  ConsentManagerDefaultInterface,
   FallbackComponent,
 } from "@consent-manager/interface-default"
 import "@consent-manager/interface-default/dist/default.min.css"
@@ -69,24 +68,22 @@ const SubmitButton = (props) => (
  * * https://github.com/techboi/consent-manager
  * * https://www.gatsbyjs.com/docs/reference/config-files/gatsby-browser/#wrapRootElement
  */
-export function ConsentManagerWrapper({ children }) {
+export function ConsentManagerWrapper({ children, i18n }) {
   const storage = useConsentStateStore()
 
   return (
     <ConsentManager
       config={consentManagerConfig}
       store={storage}
-      fallbackComponent={(props) => (
-        <FallbackComponent Trans={Trans} {...props} />
-      )}
+      fallbackComponent={(props) => <FallbackComponent {...props} />}
     >
-      {children}
-      <ConsentManagerForm
-        formComponent={InterfaceDefault}
+      <ConsentManagerDefaultInterface
+        i18n={i18n}
         Switch={Switch}
         SubmitButton={SubmitButton}
-        Trans={Trans}
-      />
+      >
+        {children}
+      </ConsentManagerDefaultInterface>
     </ConsentManager>
   )
 }
