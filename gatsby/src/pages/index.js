@@ -5,8 +5,6 @@ import Layout from "../components/layout"
 import Image from "../components/image"
 import SEO from "../components/seo"
 
-import { YouTubeVideo } from "@consent-manager/integration-youtube"
-
 const IndexPage = () => (
   <Layout>
     <SEO title="Home" />
@@ -16,7 +14,6 @@ const IndexPage = () => (
     <div style={{ maxWidth: `300px`, marginBottom: `1.45rem` }}>
       <Image />
     </div>
-    <YouTubeVideo id="OFRjZtYs3wY" />
     <Link to="/page-2/">Go to page 2</Link> <br />
     <Link to="/using-typescript/">Go to "Using TypeScript"</Link>
   </Layout>
