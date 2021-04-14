@@ -8,6 +8,8 @@
     "@consent-manager/core": "^0.1.0-alpha.0",
     "@consent-manager/integration-matomo": "^0.1.0-alpha.0",
     "@consent-manager/interface-default": "^0.1.0-alpha.0",
+    "@lingui/core": "^3.8.9",
+    "@lingui/react": "^3.8.9",
     "autoprefixer": "^10.2.5",
     "final-form": "^4.20.2",
     "gatsby": "^3.3.0",

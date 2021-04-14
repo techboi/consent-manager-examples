@@ -6,6 +6,7 @@
  */
 
 import React from "react"
+import { Trans } from "@lingui/react"
 
 import { ConsentManager, ConsentManagerForm } from "@consent-manager/core"
 import createPersistedState from "use-persisted-state"
@@ -15,11 +16,13 @@ import {
   getMatomoTracker,
 } from "@consent-manager/integration-matomo"
 
-import { InterfaceDefault } from "@consent-manager/interface-default"
+import {
+  InterfaceDefault,
+  FallbackComponent,
+} from "@consent-manager/interface-default"
 import "@consent-manager/interface-default/dist/default.min.css"
 
 import { Switch } from "./tailwind-switch"
-import { FallbackComponent } from "./tailwind-fallback-component"
 
 const useConsentStateStore = createPersistedState("consent-manager")
 
@@ -73,13 +76,16 @@ export function ConsentManagerWrapper({ children }) {
     <ConsentManager
       config={consentManagerConfig}
       store={storage}
-      fallbackComponent={FallbackComponent}
+      fallbackComponent={(props) => (
+        <FallbackComponent Trans={Trans} {...props} />
+      )}
     >
       {children}
       <ConsentManagerForm
         formComponent={InterfaceDefault}
         Switch={Switch}
         SubmitButton={SubmitButton}
+        Trans={Trans}
       />
     </ConsentManager>
   )
