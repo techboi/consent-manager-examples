@@ -1,12 +1,12 @@
 import React from "react"
-import { ConsentManager, ConsentManagerForm } from "@techboi/consent-manager"
+import { ConsentManager, ConsentManagerForm } from "@consent-manager/core"
 
 import { DecisionsForm } from "./decisions-form"
 import { FallbackComponent } from "./fallback-component"
 import ConsentManagerUIContext from "./ui-context"
 import ConsentManagerToggle from "./toggle"
-import { matomoIntegration } from "@techboi/consent-manager-integration-matomo"
-import { youTubeIntegration } from "@techboi/consent-manager-integration-youtube"
+import { matomoIntegration } from "@consent-manager/integration-matomo"
+import { youtubeIntegration } from "@consent-manager/integration-youtube"
 
 const consentManagerConfig = {
   integrations: [
@@ -14,7 +14,7 @@ const consentManagerConfig = {
       matomoURL: process.env.GATSBY_MATOMO_URL,
       siteID: process.env.GATSBY_MATOMO_SITE_ID,
     }),
-    youTubeIntegration(),
+    youtubeIntegration(),
     {
       id: "images",
       title: "Gatsby Image",

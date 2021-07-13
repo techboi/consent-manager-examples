@@ -1,6 +1,6 @@
 import React, { useContext, useCallback } from "react"
 
-import { useIntegration } from "@techboi/consent-manager"
+import { useIntegration } from "@consent-manager/core"
 import { HiCog } from "react-icons/hi"
 
 import ConsentManagerUIContext from "./ui-context"
