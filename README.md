@@ -4,7 +4,7 @@ Find out more about about consent-manager in the docs: https://hashbite.github.i
 
 ## Parcel 2.0
 
-https://consent-manager-example-create-react-app.netlify.app
+https://consent-manager-example-parcel.netlify.app
 
 [![Netlify Status](https://api.netlify.com/api/v1/badges/f0ac541e-20c9-4eb1-929e-0e5380499421/deploy-status)](https://app.netlify.com/sites/consent-manager-example-parcel/deploys)
 
@@ -16,7 +16,7 @@ https://consent-manager-example-create-react-app.netlify.app
 
 ## GatsbyJS
 
-https://consent-manager-example-create-gatsby.netlify.app
+https://consent-manager-example-gatsby.netlify.app/
 
 [![Netlify Status](https://api.netlify.com/api/v1/badges/6fb0f8a2-8683-40f5-bad6-a9b21e73d988/deploy-status)](https://app.netlify.com/sites/consent-manager-example-gatsby/deploys)
 
