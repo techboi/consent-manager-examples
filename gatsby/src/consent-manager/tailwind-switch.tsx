@@ -1,9 +1,6 @@
 import React, { useMemo } from "react"
+import { SwitchProps } from "@consent-manager/interface-default"
 import { FieldRenderProps } from "react-final-form"
-
-interface SwitchProps extends FieldRenderProps<string, any> {
-  enabledColor: string
-}
 
 export const Switch: React.FC<SwitchProps> = ({
   children,

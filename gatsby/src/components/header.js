@@ -7,24 +7,28 @@ const Header = ({ siteTitle }) => {
   const { i18n } = useLingui()
   const [activeLocale, setActiveLang] = useState(i18n.locale)
 
-  function getOtherLanguage(lang) {
-    const locales = Object.keys(i18n._messages)
-    return locales[!locales.indexOf(lang) ? 1 : 0]
-  }
+  const getOtherLanguage = useCallback(
+    (lang) => {
+      console.log("header", { i18n })
+      const locales = Object.keys(i18n._messages)
+      return locales[!locales.indexOf(lang) ? 1 : 0]
+    },
+    [i18n]
+  )
 
   // Cheap switch method as we demo with two locales
   const handleLangSwitch = useCallback(
     (e) => {
       setActiveLang((active) => getOtherLanguage(active))
     },
-    [i18n.locales]
+    [setActiveLang, getOtherLanguage]
   )
 
   useEffect(() => {
     if (activeLocale !== i18n.locale) {
       i18n.activate(activeLocale)
     }
-  }, [activeLocale, i18n.locale, i18n.activate])
+  }, [activeLocale, i18n.locale, i18n.activate, i18n])
 
   return (
     <header className="bg-purple-600 mb-6 text-white">

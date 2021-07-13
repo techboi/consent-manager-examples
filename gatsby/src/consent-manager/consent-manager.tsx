@@ -6,26 +6,25 @@
  */
 
 import React from "react"
-
-import { ConsentManager } from "@consent-manager/core"
 import createPersistedState from "use-persisted-state"
 
 import {
   matomoIntegration,
   getMatomoTracker,
 } from "@consent-manager/integration-matomo"
-
-import {
-  ConsentManagerDefaultInterface,
-  FallbackComponent,
-} from "@consent-manager/interface-default"
+import { ConsentManagerDefaultInterface } from "@consent-manager/interface-default"
 import "@consent-manager/interface-default/dist/default.min.css"
 
 import { Switch } from "./tailwind-switch"
+import { ConsentManagerStore } from "@consent-manager/core"
 
-const useConsentStateStore = createPersistedState("consent-manager")
+import { useMessages } from "./consent-manager-i18n"
 
-const consentManagerConfig = {
+const useConsentStateStore = createPersistedState(
+  "consent-manager-gatsby-example"
+)
+
+const config = {
   integrations: [
     matomoIntegration({
       matomoURL: process.env.GATSBY_MATOMO_URL,
@@ -55,36 +54,25 @@ const consentManagerConfig = {
   ],
 }
 
-const SubmitButton = (props) => (
-  <button
-    className="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded"
-    {...props}
-  />
-)
-
 /**
  * Wraps the apps root element with consent-manager
  * See:
  * * https://github.com/techboi/consent-manager
  * * https://www.gatsbyjs.com/docs/reference/config-files/gatsby-browser/#wrapRootElement
  */
-export function ConsentManagerWrapper({ children, i18n }) {
-  const storage = useConsentStateStore()
+export function ConsentManagerWrapper({ children }) {
+  const storage: ConsentManagerStore = useConsentStateStore()
+  const messages = useMessages()
 
   return (
-    <ConsentManager
-      config={consentManagerConfig}
+    <ConsentManagerDefaultInterface
+      config={config}
       store={storage}
-      fallbackComponent={(props) => <FallbackComponent {...props} />}
+      Switch={Switch}
+      messages={messages}
     >
-      <ConsentManagerDefaultInterface
-        i18n={i18n}
-        Switch={Switch}
-        SubmitButton={SubmitButton}
-      >
-        {children}
-      </ConsentManagerDefaultInterface>
-    </ConsentManager>
+      {children}
+    </ConsentManagerDefaultInterface>
   )
 }
 
@@ -94,10 +82,6 @@ export function ConsentManagerWrapper({ children, i18n }) {
  */
 export function onRouteUpdate({ location, prevLocation }) {
   const { trackPageViewSPA } = getMatomoTracker()
-
-  if (!prevLocation) {
-    return
-  }
 
   // This ensures plugins like react-helmet finished their work
   window.setTimeout(() => {
