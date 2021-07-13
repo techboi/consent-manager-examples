@@ -5,7 +5,7 @@ import Layout from "../components/layout"
 import Image from "../components/image"
 import SEO from "../components/seo"
 
-import { YouTubeVideo } from "@techboi/consent-manager-integration-youtube"
+import { YoutubeVideo } from "../components/video/youtube-video"
 
 const IndexPage = () => (
   <Layout>
@@ -16,7 +16,7 @@ const IndexPage = () => (
     <div style={{ maxWidth: `300px`, marginBottom: `1.45rem` }}>
       <Image />
     </div>
-    <YouTubeVideo id="OFRjZtYs3wY" />
+    <YoutubeVideo id="OFRjZtYs3wY" />
     <Link to="/page-2/">Go to page 2</Link> <br />
     <Link to="/using-typescript/">Go to "Using TypeScript"</Link>
   </Layout>

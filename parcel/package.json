@@ -1,14 +1,15 @@
 {
-  "name": "@techboi/consent-manager-example-parcel-minimal",
-  "version": "1.0.0",
-  "main": "index.js",
+  "name": "@consent-manager/example-parcel",
+  "author": "Benedikt Rötsch <benedikt@hashbite.net>",
+  "private": true,
+  "version": "0.0.1",
   "license": "MIT",
   "scripts": {
     "start": "parcel index.html",
-    "build": "parcel build index.html"
+    "build": "parcel build src/index.html"
   },
   "dependencies": {
-    "@techboi/consent-manager": "^0.2.0",
+    "@consent-manager/core": "^0.0.1",
     "react": "17.0.1",
     "react-app-polyfill": "^1.0.0",
     "react-dom": "^17.0.1"
@@ -16,7 +17,7 @@
   "devDependencies": {
     "@types/react": "^16.9.11",
     "@types/react-dom": "^16.8.4",
-    "parcel": "^1.12.3",
+    "parcel": "next",
     "typescript": "^3.4.5"
   }
 }
