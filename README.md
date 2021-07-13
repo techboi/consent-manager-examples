@@ -20,6 +20,12 @@ https://consent-manager-example-create-gatsby.netlify.app
 
 [![Netlify Status](https://api.netlify.com/api/v1/badges/6fb0f8a2-8683-40f5-bad6-a9b21e73d988/deploy-status)](https://app.netlify.com/sites/consent-manager-example-gatsby/deploys)
 
+## NextJS
+
+https://consent-manager-example-nextjs.netlify.app
+
+[![Netlify Status](https://api.netlify.com/api/v1/badges/0c0fba40-c814-4af9-bab1-cf4a521cd032/deploy-status)](https://app.netlify.com/sites/consent-manager-example-nextjs/deploys)
+
 # Development / Usage
 
 ## Using the local registry
