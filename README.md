@@ -1,5 +1,7 @@
 # Consent Manager Examples
 
+Find out more about about consent-manager in the docs: https://hashbite.github.io/consent-manager/
+
 ## Parcel 2.0
 
 https://consent-manager-example-create-react-app.netlify.app
