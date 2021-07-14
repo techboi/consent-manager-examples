@@ -14,7 +14,7 @@
     {
       "matchSourceUrlPrefixes": [
         "https://github.com/zeit/next.js",
-        "https://github.com/vercel/next.js",
+        "https://github.com/vercel/next.js"
       ],
       "groupName": "nextjs monorepo",
       "prPriority": 4
