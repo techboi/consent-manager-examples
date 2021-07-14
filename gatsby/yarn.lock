@@ -1043,9 +1043,9 @@
     "@babel/helper-validator-identifier" "^7.14.5"
     to-fast-properties "^2.0.0"
 
-"@consent-manager/core@^0.0.1":
+"@consent-manager/core@0.0.1":
   version "0.0.1"
-  resolved "https://registry.npmjs.org/@consent-manager/core/-/core-0.0.1.tgz#a4e9601b59f4cc529c9155265847744259745125"
+  resolved "https://registry.yarnpkg.com/@consent-manager/core/-/core-0.0.1.tgz#a4e9601b59f4cc529c9155265847744259745125"
   integrity sha512-M3A04rb1hPasW75JE8/9rUwkpo9S6mU2YAMZYvzK3LyRxA8Vp6zJ90fyIX7oZ4ox05KAAtQ7Yagahyv4zDFfKQ==
   dependencies:
     "@types/history" "^4.7.8"
@@ -1053,16 +1053,16 @@
     react-use "^17.2.4"
     wcag-contrast "^3.0.0"
 
-"@consent-manager/integration-matomo@^0.0.1":
+"@consent-manager/integration-matomo@0.0.1":
   version "0.0.1"
-  resolved "https://registry.npmjs.org/@consent-manager/integration-matomo/-/integration-matomo-0.0.1.tgz#2ea03039452d865587850cf673eb8fcc8bc5e2ee"
+  resolved "https://registry.yarnpkg.com/@consent-manager/integration-matomo/-/integration-matomo-0.0.1.tgz#2ea03039452d865587850cf673eb8fcc8bc5e2ee"
   integrity sha512-O1QIoejbW253kn2E8DGyq4gqv/vPb4c9/F/ytwE6hv0qQ/LuNsdYKR0sjzlsX+H0ZZxhmSHCCaiRy5T3DIJTHQ==
   dependencies:
     simple-icons "^4.14.0"
 
-"@consent-manager/integration-youtube@^0.0.1":
+"@consent-manager/integration-youtube@0.0.1":
   version "0.0.1"
-  resolved "https://registry.npmjs.org/@consent-manager/integration-youtube/-/integration-youtube-0.0.1.tgz#2a702372512ea12a8e3b881c41847b6585e1f2bb"
+  resolved "https://registry.yarnpkg.com/@consent-manager/integration-youtube/-/integration-youtube-0.0.1.tgz#2a702372512ea12a8e3b881c41847b6585e1f2bb"
   integrity sha512-2FplJX8tVNaoCCR1gu6lG2R/NWuxhMtO5p/e+ZpExbU44ukSc/rj2rtNLgtdks2WkQsVgfFfE7QRZDRcJ0pTCQ==
   dependencies:
     simple-icons "^4.14.0"

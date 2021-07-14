@@ -228,9 +228,9 @@
     "@babel/helper-validator-identifier" "^7.14.5"
     to-fast-properties "^2.0.0"
 
-"@consent-manager/core@^0.0.1":
+"@consent-manager/core@0.0.1":
   version "0.0.1"
-  resolved "https://registry.npmjs.org/@consent-manager/core/-/core-0.0.1.tgz#a4e9601b59f4cc529c9155265847744259745125"
+  resolved "https://registry.yarnpkg.com/@consent-manager/core/-/core-0.0.1.tgz#a4e9601b59f4cc529c9155265847744259745125"
   integrity sha512-M3A04rb1hPasW75JE8/9rUwkpo9S6mU2YAMZYvzK3LyRxA8Vp6zJ90fyIX7oZ4ox05KAAtQ7Yagahyv4zDFfKQ==
   dependencies:
     "@types/history" "^4.7.8"

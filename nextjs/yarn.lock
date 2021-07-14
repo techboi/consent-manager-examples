@@ -54,9 +54,9 @@
     lodash "^4.17.13"
     to-fast-properties "^2.0.0"
 
-"@consent-manager/core@^0.0.1":
+"@consent-manager/core@0.0.1":
   version "0.0.1"
-  resolved "https://registry.npmjs.org/@consent-manager/core/-/core-0.0.1.tgz#a4e9601b59f4cc529c9155265847744259745125"
+  resolved "https://registry.yarnpkg.com/@consent-manager/core/-/core-0.0.1.tgz#a4e9601b59f4cc529c9155265847744259745125"
   integrity sha512-M3A04rb1hPasW75JE8/9rUwkpo9S6mU2YAMZYvzK3LyRxA8Vp6zJ90fyIX7oZ4ox05KAAtQ7Yagahyv4zDFfKQ==
   dependencies:
     "@types/history" "^4.7.8"
@@ -64,16 +64,16 @@
     react-use "^17.2.4"
     wcag-contrast "^3.0.0"
 
-"@consent-manager/integration-matomo@^0.0.1":
+"@consent-manager/integration-matomo@0.0.1":
   version "0.0.1"
-  resolved "https://registry.npmjs.org/@consent-manager/integration-matomo/-/integration-matomo-0.0.1.tgz#2ea03039452d865587850cf673eb8fcc8bc5e2ee"
+  resolved "https://registry.yarnpkg.com/@consent-manager/integration-matomo/-/integration-matomo-0.0.1.tgz#2ea03039452d865587850cf673eb8fcc8bc5e2ee"
   integrity sha512-O1QIoejbW253kn2E8DGyq4gqv/vPb4c9/F/ytwE6hv0qQ/LuNsdYKR0sjzlsX+H0ZZxhmSHCCaiRy5T3DIJTHQ==
   dependencies:
     simple-icons "^4.14.0"
 
-"@consent-manager/interface-default@^0.0.1":
+"@consent-manager/interface-default@0.0.1":
   version "0.0.1"
-  resolved "https://registry.npmjs.org/@consent-manager/interface-default/-/interface-default-0.0.1.tgz#5852024bf48d29217f269b1b30bda340868c5f6f"
+  resolved "https://registry.yarnpkg.com/@consent-manager/interface-default/-/interface-default-0.0.1.tgz#5852024bf48d29217f269b1b30bda340868c5f6f"
   integrity sha512-2br5VObkk9OK/WTn4p/h7Aem5xKOybnE9y619t+5vswYOAlbpN1AhKguYYtU8DdmNKPtioOcIbnl/sjKkOQ+9w==
   dependencies:
     "@react-icons/all-files" "^4.1.0"
