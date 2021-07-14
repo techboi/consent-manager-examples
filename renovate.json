@@ -1,5 +1,27 @@
 {
-  "extends": [
-    "config:base"
+  "extends": ["config:base"],
+  "packageRules": [
+    {
+      "matchPackagePatterns": ["^@consent-manager"],
+      "groupName": "gatsby-mdx-suite packages",
+      "prPriority": 5
+    },
+    {
+      "extends": "monorepo:gatsby",
+      "groupName": "gatsby monorepo",
+      "prPriority": 4
+    },
+    {
+      "matchSourceUrlPrefixes": [
+        "https://github.com/zeit/next.js",
+        "https://github.com/vercel/next.js",
+        "groupName": "nextjs monorepo",
+        "prPriority": 4
+      ]
+    },
+    {
+      "matchDepTypes": "devDependencies",
+      "groupName": "devDependencies"
+    }
   ]
 }
