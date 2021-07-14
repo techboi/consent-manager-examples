@@ -3,12 +3,12 @@
   "packageRules": [
     {
       "matchPackagePatterns": ["^@consent-manager"],
-      "groupName": "gatsby-mdx-suite packages",
+      "groupName": "consent-manager",
       "prPriority": 5
     },
     {
       "extends": "monorepo:gatsby",
-      "groupName": "gatsby monorepo",
+      "groupName": "gatsby",
       "prPriority": 4
     },
     {
@@ -16,7 +16,7 @@
         "https://github.com/zeit/next.js",
         "https://github.com/vercel/next.js"
       ],
-      "groupName": "nextjs monorepo",
+      "groupName": "nextjs",
       "prPriority": 4
     },
     {
