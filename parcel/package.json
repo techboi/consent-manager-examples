@@ -9,7 +9,7 @@
     "build": "parcel build src/index.html"
   },
   "dependencies": {
-    "@consent-manager/core": "^0.0.1",
+    "@consent-manager/core": "0.0.1",
     "react": "17.0.2",
     "react-app-polyfill": "^2.0.0",
     "react-dom": "^17.0.1"
