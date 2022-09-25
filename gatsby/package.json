@@ -7,7 +7,7 @@
     "@consent-manager/core": "0.0.1",
     "@consent-manager/integration-matomo": "0.0.1",
     "@consent-manager/integration-youtube": "0.0.1",
-    "autoprefixer": "^10.2.5",
+    "autoprefixer": "10.4.12",
     "final-form": "^4.20.2",
     "gatsby": "3.9.1",
     "gatsby-image": "3.9.0",
