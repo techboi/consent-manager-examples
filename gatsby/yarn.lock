@@ -1043,27 +1043,27 @@
     "@babel/helper-validator-identifier" "^7.14.5"
     to-fast-properties "^2.0.0"
 
-"@consent-manager/core@0.0.1":
-  version "0.0.1"
-  resolved "https://registry.yarnpkg.com/@consent-manager/core/-/core-0.0.1.tgz#a4e9601b59f4cc529c9155265847744259745125"
-  integrity sha512-M3A04rb1hPasW75JE8/9rUwkpo9S6mU2YAMZYvzK3LyRxA8Vp6zJ90fyIX7oZ4ox05KAAtQ7Yagahyv4zDFfKQ==
+"@consent-manager/core@1.0.1":
+  version "1.0.1"
+  resolved "https://registry.yarnpkg.com/@consent-manager/core/-/core-1.0.1.tgz#ce90078d9506a1ac5f9c52906c900d6bd8174659"
+  integrity sha512-SNbrOEziJiK8Aah11MJRJp7kJSzd25vt0D9u8fxts98ByO37EItmbWfRLbMTzfHbHZGLMK4ALnp+IjZgifuq+g==
   dependencies:
     "@types/history" "^4.7.8"
     history "^5.0.0"
     react-use "^17.2.4"
     wcag-contrast "^3.0.0"
 
-"@consent-manager/integration-matomo@0.0.1":
-  version "0.0.1"
-  resolved "https://registry.yarnpkg.com/@consent-manager/integration-matomo/-/integration-matomo-0.0.1.tgz#2ea03039452d865587850cf673eb8fcc8bc5e2ee"
-  integrity sha512-O1QIoejbW253kn2E8DGyq4gqv/vPb4c9/F/ytwE6hv0qQ/LuNsdYKR0sjzlsX+H0ZZxhmSHCCaiRy5T3DIJTHQ==
+"@consent-manager/integration-matomo@1.0.0":
+  version "1.0.0"
+  resolved "https://registry.yarnpkg.com/@consent-manager/integration-matomo/-/integration-matomo-1.0.0.tgz#7c9fb40ebd46d43f10d696d3026e6987eed8a6c7"
+  integrity sha512-aMXBxBFVnxU7+W/tlbewy/SmhrZTfs26cTFu8FGjxk+gDv66ivYgfyl2bX5r4didatvEcup+IHJhcRCv6Thaaw==
   dependencies:
     simple-icons "^4.14.0"
 
-"@consent-manager/integration-youtube@0.0.1":
-  version "0.0.1"
-  resolved "https://registry.yarnpkg.com/@consent-manager/integration-youtube/-/integration-youtube-0.0.1.tgz#2a702372512ea12a8e3b881c41847b6585e1f2bb"
-  integrity sha512-2FplJX8tVNaoCCR1gu6lG2R/NWuxhMtO5p/e+ZpExbU44ukSc/rj2rtNLgtdks2WkQsVgfFfE7QRZDRcJ0pTCQ==
+"@consent-manager/integration-youtube@1.0.0":
+  version "1.0.0"
+  resolved "https://registry.yarnpkg.com/@consent-manager/integration-youtube/-/integration-youtube-1.0.0.tgz#07116597a07ba7b0ea7ce343acf8949f6bc02539"
+  integrity sha512-vmDHkFZEnNsvFhlBynGHCTmBAWF1Zw/TB97hhaW1zFQdEuuRQxdkUFQxFvD7/Qk5aIhuxXy3sFfTBU9CJvoxCw==
   dependencies:
     simple-icons "^4.14.0"
 

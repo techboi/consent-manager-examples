@@ -1203,10 +1203,10 @@
     exec-sh "^0.3.2"
     minimist "^1.2.0"
 
-"@consent-manager/core@0.0.1":
-  version "0.0.1"
-  resolved "https://registry.yarnpkg.com/@consent-manager/core/-/core-0.0.1.tgz#a4e9601b59f4cc529c9155265847744259745125"
-  integrity sha512-M3A04rb1hPasW75JE8/9rUwkpo9S6mU2YAMZYvzK3LyRxA8Vp6zJ90fyIX7oZ4ox05KAAtQ7Yagahyv4zDFfKQ==
+"@consent-manager/core@1.0.1":
+  version "1.0.1"
+  resolved "https://registry.yarnpkg.com/@consent-manager/core/-/core-1.0.1.tgz#ce90078d9506a1ac5f9c52906c900d6bd8174659"
+  integrity sha512-SNbrOEziJiK8Aah11MJRJp7kJSzd25vt0D9u8fxts98ByO37EItmbWfRLbMTzfHbHZGLMK4ALnp+IjZgifuq+g==
   dependencies:
     "@types/history" "^4.7.8"
     history "^5.0.0"
