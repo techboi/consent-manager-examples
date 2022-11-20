@@ -11,7 +11,7 @@
   "dependencies": {
     "@consent-manager/core": "0.0.1",
     "@consent-manager/integration-matomo": "0.0.1",
-    "@consent-manager/interface-default": "0.0.1",
+    "@consent-manager/interface-default": "0.1.0",
     "next": "11.0.1",
     "react": "17.0.2",
     "react-dom": "17.0.2",
