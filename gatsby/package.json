@@ -9,7 +9,7 @@
     "@consent-manager/integration-youtube": "1.0.0",
     "autoprefixer": "^10.2.5",
     "final-form": "^4.20.2",
-    "gatsby": "3.9.1",
+    "gatsby": "4.25.7",
     "gatsby-image": "3.9.0",
     "gatsby-plugin-manifest": "3.9.0",
     "gatsby-plugin-offline": "4.9.0",
