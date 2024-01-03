@@ -31,10 +31,10 @@
   dependencies:
     regenerator-runtime "^0.13.4"
 
-"@consent-manager/core@1.0.1":
-  version "1.0.1"
-  resolved "https://registry.yarnpkg.com/@consent-manager/core/-/core-1.0.1.tgz#ce90078d9506a1ac5f9c52906c900d6bd8174659"
-  integrity sha512-SNbrOEziJiK8Aah11MJRJp7kJSzd25vt0D9u8fxts98ByO37EItmbWfRLbMTzfHbHZGLMK4ALnp+IjZgifuq+g==
+"@consent-manager/core@next":
+  version "2.0.0-next.2"
+  resolved "https://registry.yarnpkg.com/@consent-manager/core/-/core-2.0.0-next.2.tgz#c245fa867a31f8aea9afc15014ee30d1270ede63"
+  integrity sha512-Vi8QuqVQLYWBTInGxnDYXMuZhxzq997nmN9Bg+fEJ7heqDXr74jp1zPsoi5vHNVA1MhLZBvESZr71b7lrKFyQA==
   dependencies:
     "@types/history" "^4.7.8"
     history "^5.0.0"
@@ -905,10 +905,10 @@
     "@types/scheduler" "*"
     csstype "^3.0.2"
 
-"@types/react@^18.2.45":
-  version "18.2.45"
-  resolved "https://registry.yarnpkg.com/@types/react/-/react-18.2.45.tgz#253f4fac288e7e751ab3dc542000fb687422c15c"
-  integrity sha512-TtAxCNrlrBp8GoeEp1npd5g+d/OejJHFxS3OWmrPBMFaVQMSN0OFySozJio5BHxTuTeug00AVXVAjfDSfk+lUg==
+"@types/react@^18.2.46":
+  version "18.2.46"
+  resolved "https://registry.yarnpkg.com/@types/react/-/react-18.2.46.tgz#f04d6c528f8f136ea66333bc66abcae46e2680df"
+  integrity sha512-nNCvVBcZlvX4NU1nRRNV/mFl1nNRuTuslAJglQsq+8ldXe5Xv0Wd2f7WTE3jOxhLH2BFfiZGC6GCp+kHQbgG+w==
   dependencies:
     "@types/prop-types" "*"
     "@types/scheduler" "*"
@@ -1656,6 +1656,11 @@ posthtml@^0.16.4, posthtml@^0.16.5:
   dependencies:
     posthtml-parser "^0.11.0"
     posthtml-render "^3.0.0"
+
+process@^0.11.10:
+  version "0.11.10"
+  resolved "https://registry.yarnpkg.com/process/-/process-0.11.10.tgz#7332300e840161bda3e69a1d1d91a7d4bc16f182"
+  integrity sha512-cdGef/drWFoydD1JsMzuFf8100nZl+GT+yacc2bEced5f9Rjk4z+WtFUTBu9PhOi9j/jfmBPu0mMEY4wIdAF8A==
 
 promise@^8.1.0:
   version "8.1.0"
